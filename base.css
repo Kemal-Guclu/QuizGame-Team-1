@@ -1,0 +1,30 @@
+/*https://coolors.co/palette/155066-185f7b*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --dark-blue-color: #155066;
+  --light-blue-color: #185f7b;
+  /*--light-purple-color: #8854c0;*/
+  --light-color: #fff;
+  --dark-color: #000;
+  --gray-color: #f2f2f2;
+  --transition: all 300ms ease-in-out;
+}
+
+/* centering */
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+  background-color: var(--gray-color);
+  color: var(--dark-blue-color);
+}
