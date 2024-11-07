@@ -1,0 +1,43 @@
+@import "base.css";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--background-gradient);
+}
+
+.maincontainer {
+    /*container för fråga och svar*/
+
+    margin: 0 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.questioncontainer {
+    /*container för fråga*/
+    background-color: var(--light-coral);
+    border: 2px solid black;
+    border-radius: 25px;
+    margin: 40px 0 100px 0;
+    padding: 60px 10px;
+    width: 380px;
+    display: flex;
+    justify-content: center;
+}
+
+.answercontainer {
+    /*container för svar*/
+    background-color: var(--light-coral);
+    border: 2px solid black;
+    border-radius: 25px;
+    margin-top: 10px;
+    padding: 10px;
+    width: 380px;
+    
+}
