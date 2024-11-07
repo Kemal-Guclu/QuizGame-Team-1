@@ -21,7 +21,7 @@ body {
 
 .questioncontainer {
     /*container för fråga*/
-    background-color: var(--light-coral);
+    background: var(--card-background);
     border: 2px solid black;
     border-radius: 25px;
     margin: 40px 0 100px 0;
@@ -33,13 +33,17 @@ body {
 
 .answercontainer {
     /*container för svar*/
-    background-color: var(--light-coral);
+    background: var(--card-background);
     border: 2px solid black;
     border-radius: 25px;
     margin-top: 10px;
     padding: 10px;
     width: 380px;
     
+}
+
+.imagecontainer {
+    display: none;
 }
 
 @media (min-width: 600px) {
@@ -53,5 +57,23 @@ body {
     .questioncontainer {
         padding: 30px 10px;
         width: 600px;
+        margin-bottom: 70px;
     }
+
+    .imagecontainer {
+        display: block;
+        width: 600px;
+        height: 250px;
+        margin-top: 10px;
+        border: 2px solid black;
+    }
+}
+@media (min-width: 1000px) {
+    .answercontainer {
+        width: 470px;
+    }
+    .questioncontainer {
+        width: 980px;
+    }
+
 }
