@@ -1,0 +1,8 @@
+:root {
+    /*colors*/
+    --celadon: #B4EDD2;
+    --light-blue: #A0CFD3;
+    --light-coral: #EB8A90;
+    /*gradient*/
+    --background-gradient: linear-gradient(to right, #B4EDD2, #A0CFD3);
+}

@@ -1,11 +1,18 @@
+@import "base.css";
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+body {
+    background: var(--background-gradient);
+}
+
 .maincontainer {
-    /*border: 1px solid black;*/
+    /*container för fråga och svar*/
+
     margin: 0 50px;
     display: flex;
     flex-direction: column;
@@ -13,6 +20,8 @@
 }
 
 .questioncontainer {
+    /*container för fråga*/
+    background-color: var(--light-coral);
     border: 2px solid black;
     border-radius: 25px;
     margin: 40px 0 100px 0;
@@ -20,6 +29,8 @@
 }
 
 .answercontainer {
+    /*container för svar*/
+    background-color: var(--light-coral);
     border: 2px solid black;
     border-radius: 25px;
     margin-top: 10px;
