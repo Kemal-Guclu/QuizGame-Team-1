@@ -5,4 +5,5 @@
     --light-coral: #EB8A90;
     /*gradient*/
     --background-gradient: linear-gradient(to right, #B4EDD2, #A0CFD3);
+    --card-background: linear-gradient(to top left, rgba(87, 149, 153, 0.534), white);
 }
