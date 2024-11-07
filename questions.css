@@ -25,7 +25,10 @@ body {
     border: 2px solid black;
     border-radius: 25px;
     margin: 40px 0 100px 0;
-    padding: 60px 150px;
+    padding: 60px 10px;
+    width: 380px;
+    display: flex;
+    justify-content: center;
 }
 
 .answercontainer {
@@ -34,6 +37,7 @@ body {
     border: 2px solid black;
     border-radius: 25px;
     margin-top: 10px;
-    padding: 10px 290px 10px 10px;
+    padding: 10px;
+    width: 380px;
     
 }
