@@ -1,0 +1,52 @@
+@import "base.css";
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: var(--background-gradient);
+}
+
+.title-select {
+    text-align: center;
+    font-size: 4rem;
+    color: var(--text-title-color);
+}
+
+.all-cards {
+    background: var(--card-background);
+    width: 300px;
+    min-width: 200px;
+    margin: 0 auto;
+    border-radius: 15px;
+    border: 2px solid rgba(92, 92, 92, 0.6);
+    box-shadow: 0 6px 50px 5px rgba(105, 105, 105, 0.404);
+}
+
+.cards {
+    height: 400px;
+    min-width: 200px;
+}
+
+.card-image {
+    width: 100%;
+    height: 40%;
+    background-color: lightblue;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.card-info {
+    padding: 0 1rem;
+    min-width: 200px;
+}
+
+.category {
+    font-size: 2.5rem;
+    color: var(--card-color);
+}
+
+.category-info {
+    font-size: 1.2rem;
+    color: var(--card-color);
+}
