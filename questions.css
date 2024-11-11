@@ -4,10 +4,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 
 body {
     background: var(--background-gradient);
+    display: flex;
+    height: 100vh;
 }
 
 .maincontainer {
@@ -17,6 +20,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: auto;
 }
 
 .questioncontainer {
