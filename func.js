@@ -28,7 +28,7 @@ async function quizgamenames() {try {
 
 
 // for each för alla
-if (quizid == 1) {
+
   answwers.forEach( function(itemss){
     itemss.addEventListener('click',async function(){
 
@@ -74,7 +74,7 @@ if (quizid == 1) {
     })
         
     })
-}
+
   
 
 
