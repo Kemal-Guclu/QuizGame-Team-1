@@ -3,9 +3,10 @@ const answer2= document.getElementById('answer2')
 const answer3= document.getElementById('answer3')
 const answer4= document.getElementById('answer4')
 const answwers = document.querySelectorAll('.answercontainer')
-const filler = document.getElementById('temporary1')
-const filler1 = document.getElementById('temporary2')
 
+const params = new URLSearchParams(window.location.search);
+const quizid = params.get('quizid');
+console.log(quizid)
 //fetchar json  filen där vi håller values 
 async function quizgamenames() {try {
 

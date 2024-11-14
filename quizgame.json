@@ -1,26 +1,29 @@
 {
 
-"questions":[
-    {"question1":{ "question":"ONE","value":0 ,"qs1":"jebani","questions":"ONwdawE"}},
-    {"question2":{ "question":"two","value":0,"qs2":"kurwa","questions":"twdawdo" }},
-    {"question3":{ "question":"tree","value":1 ,"qs3":"pizda","questions":"tredwadwe"}},
-    {"question4":{ "question":"four","value":0 ,"qs4":"burgir","questions":"ONforurwE"}}
+    "questions":[
+    {"question1":{ "question":"ONE","value":0 }},
+    {"question2":{ "question":"two","value":0 }},
+    {"question3":{ "question":"tree","value":1 }},
+    {"question4":{ "question":"four","value":0 }}
     
 ],
 "questionsx":[
-    {"questioness1":{"dis":"1"}},
-    {"questioness2":{"dis":"2"}},
-    {"questioness3":{"dis":"3"}},
-    {"questioness4":{"dis":"4"}}
+    {"questionone":"ow1ne"},
+    {"questiontwo":"twq1wo"},
+    {"questiontree":"trewqwqwqe"},
+    {"questionfour":"foewqequr"}
     
-],
-"questionsss":[
-    {"questioness1":{"dis":"5"}},
-    {"questioness2":{"dis":"6"}},
-    {"questioness3":{"dis":"7"}},
-    {"questioness4":{"dis":"8"}}
+],"questionsss":[
+    {"questionone":"ow1ne"},
+    {"questiontwo":"twq1wo"},
+    {"questiontree":"trewqwqwqe"},
+    {"questionfour":"foewqequr"}
     
 ]
+
+
+
+
 
 
 
