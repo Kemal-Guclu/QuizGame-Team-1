@@ -18,6 +18,11 @@ console.log(quizid)
 const params = new URLSearchParams(window.location.search);
 const quizid = params.get('quizid');
 console.log(quizid)
+
+
+
+
+
 //fetchar json  filen där vi håller values 
 async function quizgamenames() {try {
 
@@ -85,6 +90,14 @@ answwers.forEach(function(itemss){
     
   });
 });
+<<<<<<< HEAD
+=======
+
+}
+quizgamenames()
+
+ 
+>>>>>>> 6876e44 (tredje gången)
 
 }
 quizgamenames()
