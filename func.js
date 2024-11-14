@@ -45,7 +45,7 @@ async function quizgamenames() {try {
     } else if (letski===1) {
         data.questions.forEach((questionData, questionIndex) => {
             const answerElement = document.getElementById(`answer${questionIndex + 1}`);
-            answerElement.innerHTML = questionData[`question${questionIndex + 1}`].questions;
+            answerElement.innerHTML = questionData[`question${questionIndex + 1}`].value;
 
 
            
@@ -55,13 +55,13 @@ async function quizgamenames() {try {
     } else if (letski===2) {
       data.questionsx.forEach((questionData, questionIndex) => {
           const answerElement = document.getElementById(`answer${questionIndex + 1}`);
-          answerElement.innerHTML = questionData[`questioness${questionIndex + 1}`].dis;
+          answerElement.innerHTML = questionData[`question${questionIndex + 1}`].question;
       });
       letski = 3;
   } else if (letski===3) {
-      data.questionsss.forEach((questionData, questionIndex) => {
+      data.questionsx.forEach((questionData, questionIndex) => {
           const answerElement = document.getElementById(`answer${questionIndex + 1}`);
-          answerElement.innerHTML = questionData[`questioness${questionIndex + 1}`].dis;
+          answerElement.innerHTML = questionData[`question${questionIndex + 1}`].quesstion;
       });
     
   }
