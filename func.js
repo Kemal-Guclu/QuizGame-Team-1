@@ -3,6 +3,7 @@ const answer2= document.getElementById('answer2')
 const answer3= document.getElementById('answer3')
 const answer4= document.getElementById('answer4')
 const answwers = document.querySelectorAll('.answercontainer')
+<<<<<<< HEAD
 
 const params = new URLSearchParams(window.location.search);
 const quizid = params.get('quizid');
@@ -11,7 +12,12 @@ console.log(quizid)
 
 
 
+=======
+>>>>>>> 560501a (func)
 
+const params = new URLSearchParams(window.location.search);
+const quizid = params.get('quizid');
+console.log(quizid)
 //fetchar json  filen där vi håller values 
 async function quizgamenames() {try {
 
