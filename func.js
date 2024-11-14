@@ -7,6 +7,11 @@ const answwers = document.querySelectorAll('.answercontainer')
 const params = new URLSearchParams(window.location.search);
 const quizid = params.get('quizid');
 console.log(quizid)
+
+
+
+
+
 //fetchar json  filen där vi håller values 
 async function quizgamenames() {try {
 
@@ -28,6 +33,7 @@ async function quizgamenames() {try {
 
 let letski = 0
 // for each för alla
+if (quizid == 1) {
 answwers.forEach(function(itemss){
   itemss.addEventListener('click', async function(){
       const data = await quizgamenames();
@@ -73,6 +79,8 @@ answwers.forEach(function(itemss){
     
   });
 });
+
+}
 quizgamenames()
 
  
