@@ -3,7 +3,7 @@ const answer2= document.getElementById('answer2')
 const answer3= document.getElementById('answer3')
 const answer4= document.getElementById('answer4')
 const answwers = document.querySelectorAll('.answercontainer')
-
+let letski =0;
 const params = new URLSearchParams(window.location.search);
 const quizid = params.get('quizid');
 console.log(quizid)
@@ -28,28 +28,53 @@ async function quizgamenames() {try {
 
 
 // for each för alla
-if (quizid == 1) {
+
   answwers.forEach( function(itemss){
     itemss.addEventListener('click',async function(){
 
      const data =  await quizgamenames()
-     answer1.innerHTML = data.questions[0].question1.question;
-     answer2.innerHTML = data.questions[1].question2.question;
-     answer3.innerHTML = data.questions[2].question3.question;
-     answer4.innerHTML = data.questions[3].question4.question;
+      
+      //incrementera varje letski för att öka
+      if (letski === 0) {
+        data.questions.forEach((questionData, questionIndex) => {
+            const answerElement = document.getElementById(`answer${questionIndex + 1}`);
+            answerElement.innerHTML = questionData[`question${questionIndex + 1}`].question;
 
-  const answers1 = data.questions[0].question1.value;
- 
-      	console.log(answers1)
+        });
+        letski = 1;
+    } else if (letski===1) {
+        data.questions.forEach((questionData, questionIndex) => {
+            const answerElement = document.getElementById(`answer${questionIndex + 1}`);
+            answerElement.innerHTML = questionData[`question${questionIndex + 1}`].value;
 
-     if(answer3 === 1)
-      alert("")
+
+           
+         
+        });
+        letski = 2;
+    } else if (letski===2) {
+      data.questionsx.forEach((questionData, questionIndex) => {
+          const answerElement = document.getElementById(`answer${questionIndex + 1}`);
+          answerElement.innerHTML = questionData[`question${questionIndex + 1}`].question;
+      });
+      letski = 3;
+  } else if (letski===3) {
+      data.questionsx.forEach((questionData, questionIndex) => {
+          const answerElement = document.getElementById(`answer${questionIndex + 1}`);
+          answerElement.innerHTML = questionData[`question${questionIndex + 1}`].quesstion;
+      });
+    
+  }
+
+
+
+
 
 
     })
         
     })
-}
+
   
 
 
@@ -61,4 +86,3 @@ if (quizid == 1) {
 quizgamenames()
 
 //går igenom alla answercontainer och lägger till namn 
-
