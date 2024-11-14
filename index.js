@@ -1,11 +1,12 @@
 const questionAnswer = document.getElementById("questionAnswer");
 const mainContainer = document.getElementById("maincontainer");
+const timerContainer = document.getElementById("timer-container");
 const toSlow = document.createElement("div");
 toSlow.classList.add("toSlow");
 
 
 const time = document.getElementById("timer");
-let count = 1;
+let count = 20;
 
 //Funktion som räknar ned tiden som man har per fråga.
 let timeLeft = setInterval(function() {
@@ -15,7 +16,7 @@ let timeLeft = setInterval(function() {
 
         clearInterval(timeLeft);
         questionAnswer.style.display = "none";
-        time.innerHTML = "";
+        timerContainer.style.display = "none";
 
         //Skapar paragrafer som berättar att tiden gick ut.
         const timesUp = document.createElement("p");
