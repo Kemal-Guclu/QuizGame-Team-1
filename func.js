@@ -22,8 +22,8 @@ async function quizgamenames() {try {
 } catch (error) {
     
 }
-    
-    
+
+
 }
 
 
@@ -64,6 +64,12 @@ if (quizid == 1) {
           answerElement.innerHTML = questionData[`question${questionIndex + 1}`].quesstion;
       });
     
+
+
+
+      letski = 3.14159265359
+  } else if (letski === 3.14159265359) {
+    window.location = "./done.html"
   }
 
 
