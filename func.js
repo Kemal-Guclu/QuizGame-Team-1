@@ -4,7 +4,9 @@ const answer3= document.getElementById('answer3')
 const answer4= document.getElementById('answer4')
 const answwers = document.querySelectorAll('.answercontainer')
 
-
+const params = new URLSearchParams(window.location.search);
+const quizid = params.get('quizid');
+console.log(quizid)
 //fetchar json  filen där vi håller values 
 async function quizgamenames() {try {
 
@@ -26,6 +28,7 @@ async function quizgamenames() {try {
 
 
 // for each för alla
+if (quizid == 1) {
   answwers.forEach( function(itemss){
     itemss.addEventListener('click',async function(){
 
@@ -46,6 +49,8 @@ async function quizgamenames() {try {
     })
         
     })
+}
+  
 
 
 
