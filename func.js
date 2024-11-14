@@ -3,26 +3,10 @@ const answer2= document.getElementById('answer2')
 const answer3= document.getElementById('answer3')
 const answer4= document.getElementById('answer4')
 const answwers = document.querySelectorAll('.answercontainer')
-<<<<<<< HEAD
-
+let letski =0;
 const params = new URLSearchParams(window.location.search);
 const quizid = params.get('quizid');
 console.log(quizid)
-
-
-
-
-=======
->>>>>>> 560501a (func)
-
-const params = new URLSearchParams(window.location.search);
-const quizid = params.get('quizid');
-console.log(quizid)
-
-
-
-
-
 //fetchar json  filen där vi håller values 
 async function quizgamenames() {try {
 
@@ -42,62 +26,63 @@ async function quizgamenames() {try {
     
 }
 
-let letski = 0
+
 // for each för alla
 if (quizid == 1) {
-answwers.forEach(function(itemss){
-  itemss.addEventListener('click', async function(){
-      const data = await quizgamenames();
+  answwers.forEach( function(itemss){
+    itemss.addEventListener('click',async function(){
+
+     const data =  await quizgamenames()
       
       //incrementera varje letski för att öka
       if (letski === 0) {
-          data.questions.forEach((questionData, questionIndex) => {
-              const answerElement = document.getElementById(`answer${questionIndex + 1}`);
-              answerElement.innerHTML = questionData[`question${questionIndex + 1}`].question;
+        data.questions.forEach((questionData, questionIndex) => {
+            const answerElement = document.getElementById(`answer${questionIndex + 1}`);
+            answerElement.innerHTML = questionData[`question${questionIndex + 1}`].question;
 
-          });
-          letski = 1;
-      } else if (letski===1) {
-          data.questions3.forEach((questionData, questionIndex) => {
-              const answerElement = document.getElementById(`answer${questionIndex + 1}`);
-              answerElement.innerHTML = questionData[`question${questionIndex + 1}`].question;
+        });
+        letski = 1;
+    } else if (letski===1) {
+        data.questions.forEach((questionData, questionIndex) => {
+            const answerElement = document.getElementById(`answer${questionIndex + 1}`);
+            answerElement.innerHTML = questionData[`question${questionIndex + 1}`].questions;
 
 
-             
            
-          });
-          letski = 2;
-      } else if (letski===2) {
-        data.questionsx.forEach((questionData, questionIndex) => {
-            const answerElement = document.getElementById(`answer${questionIndex + 1}`);
-            answerElement.innerHTML = questionData[`questioness${questionIndex + 1}`].dis;
+         
         });
-        letski = 3;
-    } else if (letski===3) {
-        data.questionsss.forEach((questionData, questionIndex) => {
-            const answerElement = document.getElementById(`answer${questionIndex + 1}`);
-            answerElement.innerHTML = questionData[`questioness${questionIndex + 1}`].dis;
-        });
-      
-    }
-
-
-
-
-
-
-
+        letski = 2;
+    } else if (letski===2) {
+      data.questionsx.forEach((questionData, questionIndex) => {
+          const answerElement = document.getElementById(`answer${questionIndex + 1}`);
+          answerElement.innerHTML = questionData[`questioness${questionIndex + 1}`].dis;
+      });
+      letski = 3;
+  } else if (letski===3) {
+      data.questionsss.forEach((questionData, questionIndex) => {
+          const answerElement = document.getElementById(`answer${questionIndex + 1}`);
+          answerElement.innerHTML = questionData[`questioness${questionIndex + 1}`].dis;
+      });
     
-  });
-});
-<<<<<<< HEAD
-=======
+  }
 
+
+
+
+
+
+    })
+        
+    })
 }
+  
+
+
+
+
+
+
+
 quizgamenames()
 
- 
->>>>>>> 6876e44 (tredje gången)
-
-}
-quizgamenames()
+//går igenom alla answercontainer och lägger till namn 

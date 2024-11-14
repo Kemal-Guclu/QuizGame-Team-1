@@ -1,10 +1,6 @@
 {
 
-<<<<<<< HEAD
 "questions":[
-=======
-    "questions":[
->>>>>>> 560501a (func)
     {"question1":{ "question":"ONE","value":0 }},
     {"question2":{ "question":"two","value":0 }},
     {"question3":{ "question":"tree","value":1 }},
@@ -18,39 +14,6 @@
     {"questionfour":"foewqequr"}
     
 ]
-
-
-
-
-
-,
-
-
-
-
-
-
-
-
-
-"questionsss":[
-    {"questionone":"ow1ne"},
-    {"questiontwo":"twq1wo"},
-    {"questiontree":"trewqwqwqe"},
-    {"questionfour":"foewqequr"}
-    
-],"questions3":[
-    {"question1":{ "question":"ONE","value":0 }},
-    {"question2":{ "question":"twos","value":0 }},
-    {"question3":{ "question":"tredswae","value":1 }},
-    {"question4":{ "question":"fodwadwaur","value":0 }}
-    
-]
-
-
-
-
-
 
 
 
