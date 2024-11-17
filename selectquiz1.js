@@ -1,11 +1,8 @@
-addEventListener ("DOMContentLoaded", (event) => {
-    const card1 = document.getElementById("card1");
-    card1.addEventListener("click" , redirect);
-
-})
+addEventListener("DOMContentLoaded", (event) => {
+  renderCards();
+  card1.addEventListener("click", renderCards);
+});
 
 async function redirect(event) {
-    window.location.href = "./questions.html?quizid=1";        
+  window.location.href = "./questions.html?quizid=1";
 }
-
-
