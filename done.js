@@ -8,13 +8,21 @@ document.addEventListener ("DOMContentLoaded", (event) => {
 
     startpagebtn.addEventListener ("click", startpageredirect);
     retakebtn.addEventListener ("click", retakeredirect);
+
+
 })
 
+const params = new URLSearchParams(window.location.search);
+const quizid = params.get('quizid');
+console.log(quizid)
 
 
 function startpageredirect() {
     window.location.href = "./index.html"
 };
 function retakeredirect() {
-    window.location.href = "./questions.html"
+    if (quizid == 1) {
+        window.location.href = "./questions.html?quizid=1"
+    };
+    
 };

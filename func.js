@@ -69,7 +69,7 @@ if (quizid == 1) {
 
       letski = 3.14159265359
   } else if (letski === 3.14159265359) {
-    window.location = "./done.html"
+    window.location = "./done.html?quizid=1"
   }
 
 
