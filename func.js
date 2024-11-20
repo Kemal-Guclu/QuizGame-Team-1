@@ -125,7 +125,7 @@ answer4.addEventListener('click',truefalsey4)
         const container = document.getElementById('imagecontainer');
         const data =  await quizgamenames()
 
-        let didski = data.images[1];
+        let redericto = data.images[1];
         let redirect = data.images[0];
         
         if (letski === 1) {
@@ -136,7 +136,7 @@ answer4.addEventListener('click',truefalsey4)
             }
         
             const imgElement = document.createElement('img');
-            imgElement.src = didski.background;
+            imgElement.src = redericto.background;
             imgElement.className = 'imagecontainer';
             container.appendChild(imgElement);
         
