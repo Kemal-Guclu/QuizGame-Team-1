@@ -24,8 +24,8 @@ async function quizgamenames() {try {
 } catch (error) {
     
 }
-    
-    
+
+
 }
 
 
@@ -102,6 +102,12 @@ answer4.addEventListener('click',truefalsey4)
           
       });
     
+
+
+
+      letski = 3.14159265359
+  } else if (letski === 3.14159265359) {
+    window.location = "./done.html"
   }
 
 
