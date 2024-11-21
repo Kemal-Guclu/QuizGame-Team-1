@@ -42,6 +42,7 @@ if (quizid == 1) {
 
         });
         letski = 1;
+        count = 20;
     } else if (letski===1) {
         data.questions.forEach((questionData, questionIndex) => {
             const answerElement = document.getElementById(`answer${questionIndex + 1}`);
@@ -52,12 +53,14 @@ if (quizid == 1) {
          
         });
         letski = 2;
+        count = 20;
     } else if (letski===2) {
       data.questionsx.forEach((questionData, questionIndex) => {
           const answerElement = document.getElementById(`answer${questionIndex + 1}`);
           answerElement.innerHTML = questionData[`question${questionIndex + 1}`].question;
       });
       letski = 3;
+      count = 20;
   } else if (letski===3) {
       data.questionsx.forEach((questionData, questionIndex) => {
           const answerElement = document.getElementById(`answer${questionIndex + 1}`);
