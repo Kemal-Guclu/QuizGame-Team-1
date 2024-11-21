@@ -6,6 +6,7 @@
     --border-color: rgba(92, 92, 92, 0.6);
     --card-color: rgb(23, 145, 145);
     --text-title-color: rgb(52, 100, 112);
+    --light-box-shadow: rgba(255, 255, 255, 0.438);
     /*gradient*/
     --background-gradient: linear-gradient(to right, #B4EDD2, #A0CFD3);
     --card-background: linear-gradient(to top left, rgba(87, 149, 153, 0.534), white);
