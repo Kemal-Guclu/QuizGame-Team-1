@@ -62,6 +62,7 @@ answer4.addEventListener('click',truefalsey4)
         
         
         letski = 1;
+        count = 20;
         loadImagesMethod1()
            
 
@@ -79,12 +80,9 @@ answer4.addEventListener('click',truefalsey4)
         });
        
         letski = 2;
-        loadImagesMethod1()
-
-           
-           
-      
-        
+        count = 20;
+                loadImagesMethod1()
+                
     } else if (letski===2) {
       data.questionsx.forEach((questionData, questionIndex) => {
           const answerElement = document.getElementById(`answer${questionIndex + 1}`);
@@ -94,6 +92,8 @@ answer4.addEventListener('click',truefalsey4)
           
       });
       letski = 3;
+      count = 20;
+      
   } else if (letski===3) {
       data.questionsx.forEach((questionData, questionIndex) => {
           const answerElement = document.getElementById(`answer${questionIndex + 1}`);

@@ -6,14 +6,22 @@
     <title>Document</title>
     <link rel="stylesheet" href="questions.css">
         <script src="func.js" defer></script>
+        <script src="./index.js" defer></script>
 </head>
 <body>
 
-    <div  class="maincontainer">
+    <div  class="maincontainer" id="maincontainer">
+
+        <div class="timer-container" id="timer-container">
+            <p class="timer" id="timer"></p>
+        </div>
+
         <div  id="imagecontainer" class="imagecontainer">
 
         </div>
-        <div id="questioncontainer" class="questioncontainer">
+
+        <div class="questionAnswer" id="questionAnswer">
+        <div class="questioncontainer" id="questioncontainer">
             <!--frågan-->
             <p class="question" id="question">exempel fråga (ta bort den här texten senare)</p>
         </div>
@@ -41,6 +49,7 @@
                 </div>
             </div>
          <p id="winloses"></p>
+        </div>
         </div>
 
 
