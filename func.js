@@ -34,7 +34,7 @@ async function quizgamenames() {try {
 
 // for each för alla
 
-
+    
 //lyssnare för alla knappar
 answer1.addEventListener('click',truefalsey1)
 answer2.addEventListener('click',truefalsey2)
@@ -157,63 +157,90 @@ answer4.addEventListener('click',truefalsey4)
             
     
            
-
       }
       const winlos = document.getElementById('winloses');
       const winsss = []
         const loses = []
-      function truefalsey1 (){
-       
-       
-        if(letski ===1) {
-            loses.push(1);
-        }else if (letski ===2)
-            loses.push(1)
-       
-            winlos.innerHTML = `Wins: ${winsss.length} | Losses: ${loses.length}`;
+       async function truefalsey1 (){
 
-      }
-        
-
-
-      function truefalsey2 (){
+     const  data =   await quizgamenames()
        
-        
-        if(letski ===1) {
-            loses.push(1);
-        }else if (letski ===2)
-            loses.push(1)
+     
        
-            winlos.innerHTML = `Wins: ${winsss.length} | Losses: ${loses.length}`;
-
-      }
-
-
-       function truefalsey3 (){
-       
-        
-        if(letski ===1) {
+        if(letski ===1 && data.answers[0].answer ===data.questions[0].question1.question) {
             winsss.push(1);
-        }else if (letski ===2)
-            loses.push(1)
-       
-            winlos.innerHTML = `Wins: ${winsss.length} | Losses: ${loses.length}`;
+        }else{
 
-      }
-
-
-
-       function truefalsey4 (){
-       
-        
-        if(letski ===1) {
             loses.push(1);
-        }else if (letski ===2)
-            winsss.push(1)
+        }
+        
        
             winlos.innerHTML = `Wins: ${winsss.length} | Losses: ${loses.length}`;
 
       }
+        
+
+
+      async function truefalsey2 (){
+
+        const  data =   await quizgamenames()
+          
+        
+          
+           if(letski ===1 && data.answers[0].answer ===data.questions[1].question2.question) {
+               winsss.push(1);
+           }else{
+   
+               loses.push(1);
+           }
+           
+          
+               winlos.innerHTML = `Wins: ${winsss.length} | Losses: ${loses.length}`;
+   
+         }
+           
+   
+
+         async function truefalsey3 (){
+
+            const  data =   await quizgamenames()
+              
+            
+              
+               if(letski ===1 && data.answers[0].answer ===data.questions[2].question3.question) {
+                   winsss.push(1);
+               }else{
+       
+                   loses.push(1);
+               }
+               
+           
+              
+                   winlos.innerHTML = `Wins: ${winsss.length} | Losses: ${loses.length}`;
+       
+             }
+               
+
+
+             async function truefalsey4 (){
+
+                const  data =   await quizgamenames()
+                  
+                
+                  
+                   if(letski ===1 && data.answers[0].answer ===data.questions[3].question4.question) {
+                       winsss.push(1);
+                   }else{
+           
+                       loses.push(1);
+                   }
+                   
+              
+                  
+                       winlos.innerHTML = `Wins: ${winsss.length} | Losses: ${loses.length}`;
+           
+                 }
+                   
 
 
 
