@@ -5,15 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="questions.css">
-        <script src="func.js" defer></script>
+        <script src="./func.js" defer></script>
+        <script src="./index.js" defer></script>
 </head>
 <body>
 
-    <div  class="maincontainer">
-        <div class="imagecontainer">
+    <div  class="maincontainer" id="maincontainer">
+
+        <div class="timer-container" id="timer-container">
+            <p class="timer" id="timer"></p>
+        </div>
+
+        <div  id="imagecontainer" class="imagecontainer">
 
         </div>
-        <div class="questioncontainer">
+
+        <div class="questionAnswer" id="questionAnswer">
+        <div class="questioncontainer" id="questioncontainer">
             <!--frågan-->
             <p class="question" id="question">exempel fråga (ta bort den här texten senare)</p>
         </div>
@@ -40,7 +48,8 @@
                     <p class="answer" id="answer4">exempel svar</p>
                 </div>
             </div>
-        
+         <p id="winloses"></p>
+        </div>
         </div>
 
 

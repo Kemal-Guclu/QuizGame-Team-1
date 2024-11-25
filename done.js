@@ -19,10 +19,8 @@ console.log(quizid)
 
 function startpageredirect() {
     window.location.href = "./index.html"
+    
 };
 function retakeredirect() {
-    if (quizid == 1) {
-        window.location.href = "./questions.html?quizid=1"
-    };
-    
+    window.location.href = "./questions.html"
 };
