@@ -1,31 +1,45 @@
 {
 
 "questions":[
-    {"question1":{ "question":"pikachu","value":0 }},
-    {"question2":{ "question":"raichu","value":0 }},
-    {"question3":{ "question":"pichu","value":1 }},
-    {"question4":{ "question":"charmander","value":0 }}
+    {"question1":{ "question":"charmander","questiontwo":"Chikorita","questiontree":"Pikachu" ,"questionfour":"Dragon/Flying","questionfive":"4"}},
+    {"question2":{ "question":"raicshu","questiontwo":"Totodile","questiontree":"Bulbasaur" ,"questionfour":"Dragon/Ground","questionfive":"6"}},
+    {"question3":{ "question":"pichu","questiontwo":"Cyndaquil","questiontree":"Rhydon" ,"questionfour":"Ground/Rock","questionfive":"7"}},
+    {"question4":{ "question":"raichu","questiontwo":"Bulbasaur" ,"questiontree":"Mew","questionfour":"Dragon/Steel","questionfive":"5"}}
     
     
 ],
-"questionsx":[
-    {"question1":{ "question":"ONE","value":0 ,"quesstion":"two"}},
-    {"question2":{ "question":"ONE","value":0 ,"quesstion":"two"}},
-    {"question3":{ "question":"ONE","value":0,"quesstion":"two" }},
-    {"question4":{ "question":"ONE","value":0, "quesstion":"two" }}
-    
-],
+
 "images": [
-    
+  
     { "background": "../images/pre.jpg" },
-    { "background": "../images/004.png" }
+    { "background": "../images/g1.jpg"},
+    { "background": "../images/who.jpg" },
+    { "background": "../images/004.png" },
+    { "background": "../images/Untitled.png" }
 ],
 "quizquestions":[
 
-{"quizq":"which one does not fit in?"},
 {"quizq":"which one is not a pikachu evolution?"},
-{"quizq":"which one is not of the fire type"}
+{"quizq":"which one is a first gen?"},
+{"quizq":"first pokemon ever crated ?"},
+{"quizq":"What type is the Pokémon “Garchomp ?"},
+{"quizq":". What is the maximum number of Pokémon that can be held in a party?"}
+],
+
+
+"answers":[
+
+{"answer":"charmander"},
+{"answer":"Bulbasaur"},
+{"answer":"Rhydon"},
+{"answer":"Dragon/Ground"},
+{"answer":"6"}
 ]
+
+
+
+
+
 
 
 
