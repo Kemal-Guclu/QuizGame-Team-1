@@ -1,7 +1,7 @@
 liten reflektion över vad som kan optimeras :)
- |                                     |
-\|/                                   \|/
+
 minifya css
+
 code split js
 
 våran kod använder sig inte så mycket av saker som saktar ner en hemsida. därför är hemsidan snabb utan att ha blivit optimerad väldigt mycket, och kräver ganska lite optimering.
