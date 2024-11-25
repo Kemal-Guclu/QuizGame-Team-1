@@ -1,74 +1,72 @@
 const questionAnswer = document.getElementById("questionAnswer");
 const mainContainer = document.getElementById("maincontainer");
+const time = document.getElementById("timer");
 const timerContainer = document.getElementById("timer-container");
 const toSlow = document.createElement("div");
 toSlow.classList.add("toSlow");
 
 
-const time = document.getElementById("timer");
-let count = 50;
+//Nedräknarens starttid
+let count = 500;
 
-//Funktion som räknar ned tiden som man har per fråga.
-const btn = document.createElement("button");
-        btn.classList.add("btn");
-        btn.id = "btn"
-        btn.textContent = "Continue";
+//Nedräknings funktion
+setInterval(function() {
 
-        setInterval(function() {
+count--;
 
-    count--;
+    //När nedräknaren når noll, skapas dessa element
     if (count === 0) {
-
-        clearInterval();
+        
+        //döljer element
         questionAnswer.style.display = "none";
         timerContainer.style.display = "none";
+        imgcnt.style.display = "none";
 
-        //Skapar paragrafer som berättar att tiden gick ut.
+        //Paragrafer skapas
         const timesUp = document.createElement("p");
         timesUp.classList.add("times-up");
         timesUp.textContent = "Times up! You took too long...";
 
         const letsContinue = document.createElement("p");
         letsContinue.classList.add("lets-continue");
-        letsContinue.textContent = "Press the button to continue";
+        letsContinue.textContent = "Try again? or select another category!";
 
+        //En div med 2st knappar skapas
+        const timeOutButtons = document.createElement("div");
+        timeOutButtons.classList.add("buttons");
 
-        toSlow.appendChild(timesUp);
-        toSlow.appendChild(letsContinue);
-        mainContainer.appendChild(toSlow);
+        const btnTryAgain = document.createElement("button");
+        btnTryAgain.classList.add("btn");
+        btnTryAgain.id = "btnTryAgain";
+        btnTryAgain.textContent = "Try Again";
 
+        const btnSelectCategory = document.createElement("button");
+        btnSelectCategory.classList.add("btn");
+        btnSelectCategory.id = "btnSelectCategory";
+        btnSelectCategory.innerHTML = "Change category";
+
+        //Lägger till de nyligen skapade objekten i specifik container
+        toSlow.append(timesUp);
+        toSlow.append(letsContinue);
+        toSlow.append(timeOutButtons);
+        mainContainer.append(toSlow);
+        timeOutButtons.append(btnTryAgain, btnSelectCategory);
         
-        toSlow.append(btn);
-
-     
-        //Skapar en knapp för att komma vidare till nästa fråga
-        
-
-        
+   
     } else {
         time.innerHTML = count;
     }
     
 
-    
+    //Knapparna som berättar vart man navigeras
+    btnTryAgain.addEventListener("click", function() {
 
-    
-    
-    
+        window.location.href = "./questions.html";
+    });
+
+    btnSelectCategory.addEventListener("click", function() {
+        window.location.href = "./index.html"
+    })
 
 
 }, 1000);
-
-
-
-
-
-
-
-
-
-
-
-
-
-console.log("hello")
