@@ -6,7 +6,7 @@ toSlow.classList.add("toSlow");
 
 
 const time = document.getElementById("timer");
-let count = 20;
+let count = 50;
 
 //Funktion som räknar ned tiden som man har per fråga.
 let timeLeft = setInterval(function() {

@@ -14,7 +14,9 @@ document.addEventListener ("DOMContentLoaded", (event) => {
 
 function startpageredirect() {
     window.location.href = "./index.html"
+    
 };
 function retakeredirect() {
     window.location.href = "./questions.html"
+    
 };
