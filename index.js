@@ -6,15 +6,20 @@ toSlow.classList.add("toSlow");
 
 
 const time = document.getElementById("timer");
-let count = 20;
+let count = 2;
 
 //Funktion som räknar ned tiden som man har per fråga.
-let timeLeft = setInterval(function() {
+const btn = document.createElement("button");
+        btn.classList.add("btn");
+        btn.id = "btn"
+        btn.textContent = "Continue";
+
+        setInterval(function() {
 
     count--;
     if (count === 0) {
 
-        clearInterval(timeLeft);
+        clearInterval();
         questionAnswer.style.display = "none";
         timerContainer.style.display = "none";
 
@@ -32,21 +37,30 @@ let timeLeft = setInterval(function() {
         toSlow.appendChild(letsContinue);
         mainContainer.appendChild(toSlow);
 
-        const btn = document.createElement("button");
-        btn.classList.add("btn");
-        btn.textContent = "Continue";
+        
         toSlow.append(btn);
 
+     
         //Skapar en knapp för att komma vidare till nästa fråga
+        
 
         
     } else {
         time.innerHTML = count;
     }
     
+
     
 
+    
+    
+    
+
+
 }, 1000);
+
+
+
 
 
 

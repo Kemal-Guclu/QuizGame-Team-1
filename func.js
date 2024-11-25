@@ -55,8 +55,8 @@ answer4.addEventListener('click',truefalsey4)
             answerElement.innerHTML = questionData[`question${questionIndex + 1}`].question;
             
             questionmain.innerHTML= data.quizquestions[0].quizq
-           
-           
+
+            
         });
         
         
