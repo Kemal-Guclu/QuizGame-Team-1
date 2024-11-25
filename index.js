@@ -6,7 +6,7 @@ toSlow.classList.add("toSlow");
 
 
 const time = document.getElementById("timer");
-let count = 2;
+let count = 50;
 
 //Funktion som räknar ned tiden som man har per fråga.
 const btn = document.createElement("button");
