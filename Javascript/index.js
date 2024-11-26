@@ -49,13 +49,13 @@ btnTryAgain.addEventListener("click", function() {
 });
 
 btnSelectCategory.addEventListener("click", function() {
-    window.location.href = "./index.html"
+    window.location.href = "../index.html"
 })
 
 toSlow.style.display = "none";
 
 //Nedräknarens starttid
-let count = 50;
+let count = 5;
 
 //Nedräknings funktion
 let countDown = setInterval(function() {

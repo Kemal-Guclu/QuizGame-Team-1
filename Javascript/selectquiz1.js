@@ -11,7 +11,7 @@ addEventListener ("DOMContentLoaded", (event) => {
 })
 
 async function redirect(event) {
-    window.location.href = "./questions.html";
+    window.location.href = "../HTML/questions.html";
 }
 
 
