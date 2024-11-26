@@ -55,7 +55,7 @@ btnSelectCategory.addEventListener("click", function() {
 toSlow.style.display = "none";
 
 //Nedräknarens starttid
-let count = 5;
+let count = 50;
 
 //Nedräknings funktion
 let countDown = setInterval(function() {
