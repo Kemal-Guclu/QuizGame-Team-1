@@ -23,7 +23,7 @@ async function quizgamenames() {
 
         
         console.log("Fetching data from API");
-        const response = await fetch("./quizgame.json");
+        const response = await fetch("../quizgame.json");
 
         if (!response.ok) {
             throw new Error(`HTTP error! Status: ${response.status}`);

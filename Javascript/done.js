@@ -13,7 +13,7 @@ document.addEventListener ("DOMContentLoaded", (event) => {
 
 
 function startpageredirect() {
-    window.location.href = "./index.html"
+    window.location.href = "../index.html"
     
 };
 function retakeredirect() {
