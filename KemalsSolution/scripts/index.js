@@ -12,31 +12,31 @@ const data = [
   {
     id: "general",
     name: "General Knowledge",
-    image: "../images/General-Knowledge.jpg",
+    image: "./images/General-Knowledge.jpg",
     description: "Test your general knowledge",
   },
   {
     id: "computers",
     name: "Computers",
-    image: "../images/computer.jpg",
+    image: "./images/computer.jpg",
     description: "Test your computer knowledge",
   },
   {
     id: "math",
     name: "Mathematics",
-    image: "../images/Math.webp",
+    image: "./images/Math.webp",
     description: "Test your math knowledge",
   },
   {
     id: "vehicles",
     name: "Vehicles",
-    image: "../images/vehicles.jpg",
+    image: "./images/vehicles.jpg",
     description: "Test your vehicle knowledge",
   },
   {
     id: "pokemon",
     name: "Pokemon",
-    image: "../images/pokemon.jpg",
+    image: "./images/pokemon.jpg",
     description: "Test your pokemon knowledge",
   },
 ];

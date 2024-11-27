@@ -76,7 +76,8 @@ function renderQuizContent(data) {
           <h3 class="question">${data.question}</h3>
       </div>
         <ul class="answersection">
-          </ul>`;
+          </ul>
+          <div class="result" id="result">`;
       renderOptionsList(optionsList);
       break;
     case "Science: Computers":
@@ -88,7 +89,8 @@ function renderQuizContent(data) {
           <h3 class="question">${data.question}</h3>
       </div>
       <ul class="answersection">
-          </ul>`;
+          </ul>
+          <div class="result" id="result">`;
       renderOptionsList(optionsList);
       break;
     case "Science: Mathematics":
@@ -100,7 +102,8 @@ function renderQuizContent(data) {
           <h3 class="question">${data.question}</h3>
       </div>
     <ul class="answersection">
-          </ul>`;
+          </ul>
+          <div class="result" id="result">`;
       renderOptionsList(optionsList);
       break;
     case "Vehicles":
@@ -112,7 +115,8 @@ function renderQuizContent(data) {
           <h3 class="question">${data.question}</h3>
       </div>
       <ul class="answersection">
-          </ul>`;
+          </ul>
+          <div class="result" id="result">`;
       renderOptionsList(optionsList);
       break;
     case "pokemon":
@@ -124,7 +128,8 @@ function renderQuizContent(data) {
           <h3 class="question">${data.question}</h3>
       </div>
       <ul class="answersection">
-          </ul>`;
+          </ul>
+      <div class="result" id="result">`;
       renderOptionsList(optionsList);
       break;
   }
@@ -138,6 +143,21 @@ function renderOptionsList(optionsList) {
     optionElement.classList.add("answercontainer");
     optionElement.innerHTML = `<h4 class="answer" id="answer1">${option}</h4>`;
     options.appendChild(optionElement);
+
+    if (option === correctAnswer) {
+      const result = document.getElementById("result");
+      result.innerHTML = "";
+      optionElement.addEventListener("click", () => {
+        result.innerHTML = `<p>✅ <strong> Correct Answer! </strong> </p>`;
+        console.log("Correct Answer");
+      });
+    } else if (option !== correctAnswer) {
+      optionElement.addEventListener("click", () => {
+        result.innerHTML = `<p>❌  <strong> Incorrect Answer! </strong> </p>`;
+
+        console.log("Incorrect Answer");
+      });
+    }
   });
 }
 
