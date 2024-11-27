@@ -1,8 +1,13 @@
-liten reflektion över vad som kan optimeras :)
+Quiz Game Team-1
 
-minifya css
+Kemal Güclü
+Niklas Nordin
+Leon Casserfelt
+Aleksandar Cesljar
 
-code split js
+Link Netlify: https://quizgame-team1.netlify.app/
 
-våran kod använder sig inte så mycket av saker som saktar ner en hemsida. därför är hemsidan snabb utan att ha blivit optimerad väldigt mycket, och kräver ganska lite optimering.
-bilderna i som laddas in i quiz frågorna hade kunnat optimeras genom att ändra dimensioner på bildfilerna. bilden på startsidan behövde optimeras eftersom den inte hade en bestämd storlek, men nu har den det.
+Reflection + presentation
+
+https://youtu.be/moAskn99ktE
+https://www.youtube.com/watch?v=P2OweL01XxY
